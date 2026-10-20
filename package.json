@@ -1,0 +1,26 @@
+{
+  "name": "owl_message_odin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Louis-dub/owl_message_odin.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Louis-dub/owl_message_odin/issues"
+  },
+  "homepage": "https://github.com/Louis-dub/owl_message_odin#readme",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
