@@ -5,12 +5,28 @@ const messages = [
     {
         text: "Damn! I've broke my wand again!!",
         user: "Ron Weasley",
-        added: new Date(),
+        added: new Date().toLocaleString('us-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        }),
     },
     {
         text: "Gryffindor, brace yourselves for defeat",
         user: "Draco Malefoy",
-        added: new Date(),
+        added: new Date().toLocaleString('us-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        }),
     },
 ];
 
@@ -28,7 +44,15 @@ router.post("/new", (req, res) => {
     const newMessage = {
         text: messageText,
         user: messageUser,
-        added: new Date(),
+        added: new Date().toLocaleString('us-US', {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit'
+        }),
     };
     messages.push(newMessage);
     res.redirect("/");

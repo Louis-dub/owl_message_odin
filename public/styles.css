@@ -1,0 +1,100 @@
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #1a1a1a; /* Couleur de fond sombre */
+    color: #e0e0e0; /* Couleur de texte claire */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de la section de logo */
+.logo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo h1 {
+    font-family: "Harry Potter", cursive;
+    color: #ffd700; /* Or */
+}
+
+/* Style des messages */
+.message {
+    margin: 20px;
+    padding: 20px;
+    background-color: #2a2a2a; /* Fond sombre pour les messages */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.message div {
+    border-bottom: 1px solid #4a4a4a;
+    padding: 10px 0;
+}
+
+.message .info-mess {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #a0a0a0;
+}
+
+/* Style du bouton */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #1a1a1a;
+    background-color: #ffd700; /* Or */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+button a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+/* Style du formulaire */
+form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #2a2a2a; /* Fond sombre pour le formulaire */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #e0e0e0;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #4a4a4a;
+    border-radius: 5px;
+    background-color: #3a3a3a; /* Fond sombre pour le textarea */
+    color: #e0e0e0;
+}
+
+button[type="submit"] {
+    background-color: #ffd700; /* Or */
+    color: #1a1a1a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1em;
+}
