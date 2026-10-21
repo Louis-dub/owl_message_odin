@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Owl Message Board</title>
+    </head>
+
+    <body>
+        <div class="logo">
+            <img
+                src=""
+                alt="logo"
+            />
+            <h1>Owl Message Board</h1>
+        </div>
+        <div class="message">
+            <% messages.forEach(function(message) { %>
+                <div>
+                    <p><%= message.text %></p>
+                    <div class="info-mess">
+                        <p><%= message.user %></p>
+                        <p><%= message.added %></p>
+                    </div>
+                </div>
+             <% }); %>
+        </div>
+        <button>
+            <a href="/new">Send Owl</a>
+        </button>
+    </body>
+</html>
