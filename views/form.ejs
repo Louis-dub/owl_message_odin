@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles.css">
+        <link rel="icon" type="image.png" href="/logo_owl.png">
         <title>Owl Message Board</title>
     </head>
 
@@ -10,10 +12,10 @@
         <div>
             <form method="POST" action="/new">
                 <label for="mess">Message:
-                    <input type="text" name="mess" id="mess" />
+                    <input type="text" name="messageText" id="mess" />
                 </label>
                 <label for="user">Username:
-                    <input type="text" name="user" id="user" /> 
+                    <input type="text" name="messageUser" id="user" /> 
                 </label>
                 <button type="submit">
                     Send

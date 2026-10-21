@@ -1,5 +1,5 @@
 const express = require("express");
-const routes = express();
+const router = express.Router();
 
 const messages = [
     {
@@ -14,15 +14,15 @@ const messages = [
     },
 ];
 
-routes.get("/", (req, res) => {
-    res.render("index");
+router.get("/", (req, res) => {
+    res.render("index", { messages: messages });
 });
 
-routes.get("/new", (req, res) => {
+router.get("/new", (req, res) => {
     res.render("form");
 });
 
-routes.post("/new", (req, res) => {
+router.post("/new", (req, res) => {
     const messageText = req.body.messageText;
     const messageUser = req.body.messageUser;
     const newMessage = {
@@ -34,4 +34,4 @@ routes.post("/new", (req, res) => {
     res.redirect("/");
 });
 
-export default routes;
+module.exports = router;
