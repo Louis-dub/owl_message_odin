@@ -1,0 +1,16 @@
+import routes from "./routes";
+
+const express = require("express");
+const path = require("path");
+
+const app = express();
+const PORT = 3000;
+
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
+app.use("/", routes);
+
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Server is running : http://localhost:${process.env.PORT || PORT}`);
+});
